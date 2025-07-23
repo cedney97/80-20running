@@ -1467,3 +1467,19 @@ const mixed_interval = [
         ]
     }
 ]
+
+export const allRuns = [
+    ...cruise_interval,
+    ...fast_finish,
+    ...foundation,
+    ...hill_repetition,
+    ...long,
+    ...long_interval,
+    ...long_with_fast_finish,
+    ...long_with_speed_play,
+    ...mixed_interval,
+    ...recovery,
+    ...short_interval,
+    ...speed_play,
+    ...tempo
+]

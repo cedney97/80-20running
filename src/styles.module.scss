@@ -8,8 +8,37 @@
     justify-content: start;
     background: #101010;
     color: #ffffff;
+    overflow: auto;
 
     h1 {
         font-size: 32px;
     }
+}
+
+.week {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+
+    &:not(:first-child) {
+        border-top: none;
+    }
+
+    .day {
+        width: 14.2857%;
+        text-align: center;
+        height: fit-content;
+        padding: 4px;
+
+        &:not(:first-child) {
+            border-left: 1px solid white;
+        }
+    }
+}
+
+.weekSmall {
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    border-top: none;
 }
