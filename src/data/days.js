@@ -3,7 +3,7 @@ import runsText from './runs.txt'
 
 const NUM_RUNS = 18 * 7
 
-const endDate = new Date("2025-09-27T00:00");
+const endDate = new Date("2026-04-11T00:00");
 
 const readRunsFile = async () => {
     const res = await fetch(runsText)
