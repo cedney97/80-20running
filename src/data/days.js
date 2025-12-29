@@ -3,7 +3,7 @@ import runsText from './runs.txt'
 
 const NUM_RUNS = 18 * 7
 
-const endDate = new Date("2026-04-11T00:00");
+export const endDate = new Date("2026-04-12T00:00");
 
 const readRunsFile = async () => {
     const res = await fetch(runsText)
@@ -11,6 +11,7 @@ const readRunsFile = async () => {
 }
 
 export const getRunsInOrder = async () => {
+    console.log(endDate)
     const runsRaw = await readRunsFile()
     const runsSplit = runsRaw.split("\n")
     let weeks = []
