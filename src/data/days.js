@@ -1,9 +1,9 @@
-import { allRuns } from './runs';
+import { allRuns } from './runs'
 import runsText from './runs.txt'
 
 const NUM_RUNS = 18 * 7
 
-export const endDate = new Date("2026-04-12T00:00");
+export const endDate = new Date("2026-04-13T00:00")
 
 const readRunsFile = async () => {
     const res = await fetch(runsText)
